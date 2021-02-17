@@ -126,6 +126,7 @@ h3{
 }
 .section-content img {
   margin-top: 40px;
+  max-inline-size: 100%;
 }
 .section-content +hr{
   display: none;
