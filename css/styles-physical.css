@@ -73,15 +73,18 @@ main{
 }
 .header-content{
   position: relative;
+  border: 1px solid blue;
 
 }
 .wrapper{
   width: 902px;
   margin: auto;
+  border: 1px solid red;
 }
 .main-content{
   /* padding: 20px; */
   background: white;
+  border: 1px solid green;
 }
 h1{
   font-size: 60px;
