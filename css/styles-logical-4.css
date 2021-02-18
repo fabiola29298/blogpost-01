@@ -1,0 +1,293 @@
+
+:root {
+  font-size: 18px;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
+}
+
+body {
+  color: var(--gray30);
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+.title{
+  margin-block-start: 56px;
+  color: var(--gray10);
+}
+a {
+  color: var(--gray30);
+}
+.header-content {
+  padding-inline: 20px;
+  border-inline-start: 4px solid #C4C4C4 ;
+}
+header {
+  width: 50px;
+  margin-block-start: 20px;
+  font-size: 14px;
+  color: var(--gray20);
+}
+.modelo-caja ul {
+  list-style: none;
+}
+.modelo-caja ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color : #5551FF;
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+header li {
+  color: var(--gray10);
+  margin-block-end: 16px;
+  padding-block: 8px ;
+  padding-inline-start: 8px;
+  padding-inline-end: 64px;
+}
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+/* header a:hover {
+  color: var(--gray30);
+} */
+header li:hover {
+  background-color: #5551FF;
+}
+header a:hover {
+  color: white;
+}
+nav details summary {
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+
+  font-size: 40px;
+  margin-block-end: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-block: 40px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-block: 16px;
+}
+
+hr {
+  margin-block: 64px;
+  border-color: rgba(97, 97, 97, 0.2);
+}
+
+pre {
+  text-align: start;
+  background: white;
+  padding: 40px;
+  margin-block: 40px;
+  overflow: auto;
+  border-radius: 8px;
+  line-height: 24px;
+  border: 10px solid #5551FF;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
+
+}
+
+p {
+  color: var(--gray20);
+}
+strong{
+  color: #5551FF;
+}
+.hero {
+  height: 350px;
+  background-image: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('../images/patron-2.png');
+
+}
+
+.section-content img {
+  /* margin-block-start: 40px; */
+  /* display: block; */
+  max-inline-size: 100%;
+
+}
+.modelo-caja{
+  text-align: start;
+}
+.section-content {
+  counter-reset: titleList;
+  text-align: center;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal)'. ';
+}
+
+blockquote {
+  margin-block: 32px;
+  margin-inline-start: 0;
+  line-height: 24px;
+  font-size: 24px;
+
+  border-inline-start: 4px solid #5551FF ;
+  padding-inline-start: 16px;
+
+}
+blockquote p {
+  color: #424242;
+}
+
+
+
+
+.main {
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: start;
+}
+
+.main-content {
+  padding-inline: 16px;
+  padding-block-start: 64px;
+
+}
+
+.slider {
+}
+
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: rgba(142, 45, 226, 0.5);;
+  border-radius: 50%;
+}
+.slider-bullet-list a:hover{
+  background: green;
+  border-radius: 100%;
+}
+.slider-bullet-list a:active{
+  background: red;
+  border-radius: 100%;
+}
+.slider-bullet-list a::marker{
+  background: blue;
+  border-radius: 100%;
+}
+footer{
+  position: absolute;
+  margin-block-start: 48px;
+  height: 200px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+}
+footer h2{
+  /* padding-block-start: 48px; */
+  color: white;
+  margin-block-start: 48px;
+  margin-block-end: 16px;
+  font-size: 32px;
+}
+footer img{
+  height: 18px;
+  width: 18px;
+  margin: 11px;
+  display: inline-block;
+}
+.form{
+  position: relative;
+  text-align: start;
+}
+.form input {
+  inline-size: 35%;
+  border: 1px solid var(--gray30);
+  box-sizing: border-box;
+  border-radius: 90px;
+  padding-inline-start: 16px;
+  padding-inline-end: 90px;
+  padding-block: 12px;
+  color: var(--gray30);
+  font-size: 16px;
+  display: inline-block;
+  /* margin-block-end: 40px; */
+}
+
+.form input[type="submit"] {
+  background: #5551FF;
+  inline-size: 16%;
+  border: 1px solid #5551FF;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  inset-inline-end: 200px;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--gray20)
+}
+
+
+@media screen and (min-width: 1366px) {
+  .hero {
+    block-size: 350px;
+  }
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+  .header-content {
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 1008px;
+    inline-size: 30%;
+    padding-inline-start: 16px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+}
