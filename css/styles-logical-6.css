@@ -1,4 +1,5 @@
-
+/* TODO: agrgar estilos */
+/* TODO: estilos para mobile */
 :root {
   font-size: 18px;
   --gray30: #212121;
@@ -8,7 +9,7 @@
 
 body {
   color: var(--gray30);
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 .title{
@@ -28,46 +29,20 @@ header {
   font-size: 14px;
   color: var(--gray20);
 }
-.modelo-caja ul {
-  list-style: none;
-}
-.modelo-caja ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color : #5551FF;
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
+
 header li {
   color: var(--gray10);
   margin-block-end: 16px;
-  padding-block: 8px ;
-  padding-inline-start: 8px;
-  padding-inline-end: 64px;
 }
 
 header a {
   color: var(--gray10);
   text-decoration: none;
 }
-header ul {
-  list-style-type: none;
-}
-/* header a:hover {
-  color: var(--gray30);
-} */
-/* TODO: Color violenta en el menu */
-header li:hover {
-  background-color: #5551FF;
-}
 header a:hover {
-  color: white;
+  color: var(--gray30);
 }
-header li::marker {
-  color: green;
-  background-color: green;
-}
+
 nav details summary {
   font-weight: 700;
 }
@@ -79,9 +54,8 @@ h1, h2, h3 {
 h1 {
 
   font-size: 40px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
-  font-weight: 700;
-  text-align: center;
 }
 
 h2 {
@@ -101,42 +75,31 @@ hr {
 }
 
 pre {
-  text-align: start;
-  background: white;
+  background: #E5E5E5;
   padding: 40px;
-  margin-block: 40px;
   overflow: auto;
   border-radius: 8px;
   line-height: 24px;
-  border: 10px solid #5551FF;
-  box-shadow: -10px 10px 0 0 #ABAAF6;
 
 }
 
 p {
   color: var(--gray20);
 }
-strong{
-  color: #5551FF;
-}
-.hero {
-  height: 350px;
-  background-image: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('../images/patron-2.png');
 
+.hero {
+  background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  block-size: 50px;
 }
 
 .section-content img {
-  /* margin-block-start: 40px; */
-  /* display: block; */
+  margin-block-start: 40px;
+  display: block;
   max-inline-size: 100%;
+}
 
-}
-.modelo-caja{
-  text-align: start;
-}
 .section-content {
   counter-reset: titleList;
-  text-align: center;
 }
 
 .section-content h3 {
@@ -153,9 +116,8 @@ blockquote {
   line-height: 24px;
   font-size: 24px;
 
-  border-inline-start: 4px solid #5551FF ;
+  border-inline-start: 4px solid var(--gray30) ;
   padding-inline-start: 16px;
-
 }
 blockquote p {
   color: #424242;
@@ -169,13 +131,12 @@ blockquote p {
 
 .wrapper {
   max-inline-size: 902px;
-  margin: start;
+  margin: auto;
 }
 
 .main-content {
   padding-inline: 16px;
-  padding-block-start: 64px;
-
+  padding-block-start: 120px;
 }
 
 .slider {
@@ -205,35 +166,20 @@ blockquote p {
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background: rgba(142, 45, 226, 0.5);;
+  background: gray;
   border-radius: 50%;
-}
-.slider-bullet-list a:hover{
-  background: green;
-  border-radius: 100%;
-}
-.slider-bullet-list a:active{
-  background: red;
-  border-radius: 100%;
-}
-.slider-bullet-list a::marker{
-  background: blue;
-  border-radius: 100%;
 }
 footer{
   position: absolute;
-  margin-block-start: 48px;
-  height: 200px;
+  margin-block-start: 92px;
+  height: 250px;
   width: 100%;
-  background: #000000;
+  background: #212429;
   text-align: center;
 }
 footer h2{
-  /* padding-block-start: 48px; */
+  padding-block-start: 48px;
   color: white;
-  margin-block-start: 48px;
-  margin-block-end: 16px;
-  font-size: 32px;
 }
 footer img{
   height: 18px;
@@ -243,7 +189,6 @@ footer img{
 }
 .form{
   position: relative;
-  text-align: start;
 }
 .form input {
   inline-size: 35%;
@@ -260,9 +205,9 @@ footer img{
 }
 
 .form input[type="submit"] {
-  background: #5551FF;
+  background: black;
   inline-size: 16%;
-  border: 1px solid #5551FF;
+  border: 1px solid black;
   color: white;
   font-weight: 500;
   position: absolute;
@@ -279,19 +224,19 @@ footer img{
     block-size: 350px;
   }
   .header {
-    position: sticky;
+    /* position: sticky; */
     inset-block-start: -45px;
   }
   .header-content {
-    position: relative;
+    /* position: relative; */
     inset-block-start: 65px;
     padding-inline: 0;
   }
   header {
-    position: absolute;
+    /* position: absolute; */
     inset-block-start: 0;
-    inset-inline-start: 1008px;
-    inline-size: 30%;
+    inset-inline-start: -208px;
+    inline-size: 100%;
     padding-inline-start: 16px;
   }
   h1 {
@@ -299,7 +244,60 @@ footer img{
     margin-block-start: 64px;
   }
 }
+
 @media screen and (max-width: 426px) {
-  /* TODO: Mobile first */
+  /* .hero {
+    block-size: 350px;
+  } */
+  .header {
+    /* position: sticky; */
+    /* inset-block-start: -45px; */
+  }
+  .header-content {
+    /* position: relative; */
+    /* inset-block-start: 65px; */
+    /* padding-inline: 0; */
+  }
+  header {
+    /* position: absolute; */
+    /* inset-block-start: 0; */
+    /* inset-inline-start: -208px; */
+    inline-size: 100%;
+    /* padding-inline-start: 16px; */
+  }
+  h1 {
+    /* font-size: 60px; */
+    /* margin-block-start: 64px; */
+  }
+  .main-content {
+    /* padding-inline: 16px; */
+    padding-block-start: 16px;
+  }
+  pre {
+    padding: 16px;
+
+  }
+  .form input {
+    inline-size: 80%;
+    /* box-sizing: border-box; */
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    /* padding-block: 12px; */
+    display: block;
+    margin-block-end: 16px;
+  }
+
+  .form input[type="submit"] {
+    inline-size: 80%;
+    position: static;
+  }
+  footer{
+    position: static;
+    margin-block-start: 10px;
+  }
+  footer h2{
+    padding-block-start: 20px;
+    color: white;
+  }
 
 }
