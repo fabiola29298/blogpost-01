@@ -1,11 +1,9 @@
 
-/* TODO: menu a la izquierda */
-/* TODO: mobile firt */
 :root {
   font-size: 18px;
   --white30: white;
   --white20: #A5A3A5;
-  --white10: #3A3539;
+  --white10: #B8C1EC;
 }
 
 body {
@@ -24,7 +22,7 @@ a {
 }
 .header-content {
   padding-inline: 20px;
-  border-inline-start: 4px solid #C4C4C4 ;
+  /* border-inline-start: 4px solid #C4C4C4 ; */
 }
 header {
   width: 50px;
@@ -138,7 +136,7 @@ blockquote p {
 
 .main-content {
   padding-inline: 16px;
-  padding-block-start: 120px;
+  /* padding-block-start: 120px; */
 }
 
 .slider {
@@ -227,20 +225,20 @@ footer img{
     block-size: 350px;
   }
   .header {
-    /* position: sticky; */
+    position: sticky;
     inset-block-start: -45px;
   }
   .header-content {
-    /* position: relative; */
+    position: relative;
     inset-block-start: 65px;
     padding-inline: 0;
   }
   header {
-    /* position: absolute; */
+    position: absolute;
     inset-block-start: 0;
     inset-inline-start: -208px;
-    inline-size: 100%;
-    padding-inline-start: 16px;
+    inline-size: 188px;
+    /* padding-inline-start: 16px; */
   }
   h1 {
     font-size: 60px;
@@ -280,6 +278,12 @@ footer img{
     padding: 16px;
 
 
+  }
+  hr,h2{
+    margin-block: 16px;
+  }
+  blockquote{
+    margin-inline: 0px;
   }
   .form input {
     inline-size: 80%;
