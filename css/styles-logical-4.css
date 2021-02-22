@@ -57,17 +57,16 @@ header ul {
 /* header a:hover {
   color: var(--gray30);
 } */
-/* TODO: Color violenta en el menu */
 header li:hover {
   background-color: #5551FF;
 }
 header a:hover {
   color: white;
 }
-header li::marker {
+/* header li::marker {
   color: green;
   background-color: green;
-}
+} */
 nav details summary {
   font-weight: 700;
 }
@@ -300,6 +299,62 @@ footer img{
   }
 }
 @media screen and (max-width: 426px) {
-  /* TODO: Mobile first */
+  .hero {
+    block-size: 150px;
+  }
+  .title{
+    margin-block-start: 16px;
+    /* color: var(--gray10); */
+  }
+  .header-content {
+    /* position: relative; */
+    /* inset-block-start: 65px; */
+    /* padding-inline: 0; */
+    margin: 16px;
+  }
+  header {
+    /* position: absolute; */
+    /* inset-block-start: 0; */
+    /* inset-inline-start: 1008px; */
+    inline-size: 100%;
+    /* padding-inline-start: 16px; */
+  }
+  h1 {
+    /* font-size: 60px; */
+    margin-block-start: 16px;
+  }
+  .main-content {
+    padding-block-start: 16px;
+
+  }
+  hr,h2 {
+    margin-block: 16px;
+    /* border-color: rgba(97, 97, 97, 0.2); */
+  }
+
+  .form{
+    /* position: relative; */
+    /* text-align: start; */
+  }
+  .form input {
+    inline-size: 80%;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    display: block;
+    margin-block-end: 16px;
+  }
+
+  .form input[type="submit"] {
+    inline-size: 80%;
+    position: static;
+  }
+  footer{
+    position: static;
+    margin-block-start: 10px;
+  }
+  footer h2{
+    padding-block-start: 20px;
+    color: white;
+  }
 
 }
