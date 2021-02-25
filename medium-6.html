@@ -21,250 +21,70 @@
   estándares y herramientas de desarrollo avanzadas y de amigable uso." />
 </head>
 <body>
-  <div class="hero"></div>
-    <div class="header">
-      <div class="wrapper">
-        <div class="header-content">
-          <header>
-            <p class="title">CONTENIDO</p>
-            <details open>
-              <summary>
-                Setup
-              </summary>
-              <ol>
-                <li><a href="#google-chorme">Google Chrome</a></li>
-                <li><a href="#vsc">Visual Studio Code</a></li>
-                <li><a href="#figma">Figma</a></li>
-                <li><a href="#github">Github</a></li>
-              </ol>
-            </details>
-            <details open>
-              <summary> Conceptos esenciales del Desarrollo Web</summary>
-              <ol>
-                <li><a href="#html">Qué es HTML</a></li>
-                <li><a href="#etiqueta">Etiquetas</a></li>
-                <li><a href="#dom">DOM</a></li>
-                <li><a href="#semantica">Semántica</a></li>
-                <li><a href="#atributos">Atributos</a></li>
-                <li><a href="#css">Qué es CSS</a></li>
-              </ol>
-            </details>
-            <nav>
-            </nav>
-          </header>
-        </div>
-      </div>
-    </div>
     <main class="main">
       <div class="wrapper">
 
         <div class="main-content">
-          <h1> Curso esencial de HTML y CSS</h1>
-          <p> Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de
-            contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
+          <h1> Top 10 User Frustrations on Web</h1>
+          <p class="subtitle"> And how to fix (most of) them.</p>
+          <p>What are the most frustrating things that you face on the web today? Vitaly Friedman of Smashing Magazine did a great
+          job summarizing all key user frustrations in 2020.</p>
+          <img src="./images/user2020.png" alt="User Fructrations in 2020" title="User Fructrations in 2020">
+          <p>In this article, I want to overview my list of the ten most critical frustrations and share practical tips on how to
+          overcome them:</p>
+          <h3>1. Small-sized text</h3>
+          <p>Despite the recent popularity of video format, most information on the web is still in written form. That’s why</p>
+          <h2>In this article, I want to overview my list of the ten most critical frustrations and share practical tips on how to
+          overcome them:</h2>
+          <p>Here are a few practical tips for you to follow when working with text:</p>
 
-          <hr>
-          <section class="section-content">
-            <h2>
-              Setup
-            </h2>
-            <img src="./images/google-chorme.png" alt="Logo de google Chrome" title="Logo de google Chrome">
-            <h3 id="google-chorme">Google Chrome</h3>
-            <p>Chrome va a ser <strong> el navegador que utilizaremos en el curso</strong> por su extenso soporte de nuevos estándares y
-              herramientas
-              de
-              desarrollo avanzadas y de amigable uso.</p>
-            <img src="./images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
-            <h3 id="vsc">Visual Studio Code</h3>
-            <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la capacidad
-              de
-              extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin importar el lenguaje
-              en
-              el que se desemvuelva.</p>
-            <img src="./images/figma.png" alt="Logo de Figma" title="Logo de Figma">
-            <h3 id="figma">Figma</h3>
-            <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su
-              implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
-            <img src="./images/github.png" alt="Logo de Github" title="Logo de Github">
+          <ul>
+            <li>Font size should be minimum 16px. 16px for body text is a good place to start but remember that the bigger the screen
+            size, the larger the text.</li>
+            <li>Aim for line-height to be 1.5em or 1.6em for optimal readability.</li>
+            <li>Always view your designs on an actual device.</li>
+          </ul>
+          <h3>2. Tiny click targets</h3>
+          <p>The smaller the interactive elements (links, buttons, and other UI controls), the more mistakes the user will make when
+          interacting with your website.</p>
+          <h2>Do not play ‘hunt a button’ game with your visitors.</h2>
+          <img src="./images/fingers.png"  >
+          <p>Here are a few good tips:</p>
+          <ul>
+            <li>Touch targets should be finger-friendly. The average size of the touch target should be 9mm x 9mm. Material Design
+            states that touch targets should be at least 48 x 48 px.</li>
+            <li>Add good padding surrounding touch targets. Microsoft guidelines recommend 10mm paddings between touch targets.</li>
+          </ul>
+          <h3>5. Not working “Back” button</h3>
+          <p>User control and freedom is one of Jakob Nielsen’s 10 usability heuristic of user interface design. It says:</p>
+          <h2>Users need a clearly marked “emergency exit” to leave the unwanted action without having to go through an extended
+          process.</h2>
+          <p>And the Back button in a browser is this emergency exit. If you are afraid that users will lose their data by clicking
+          the Back button, it’s better to warn users about that by displaying a message “Your work will be lost"on the Back button
+          click.</p>
 
-            <h3 id="github">GitHub</h3>
-            <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo
-              el
-              mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o guardarlo de
-              manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
-            <blockquote>
-              <p>"Este es el inicio de tu carrera"</p>
-              <p> <span>-Leonidas</span></p>
-            </blockquote>
+          <pre>
+window.addEventListener("beforeunload", function(event) { ... });
 
-          </section>
-          <section class="section-content">
-            <h2>Conceptos esenciales del Desarrollo Web</h2>
-            <h3 id="html">Qué es HTML</h3>
-            <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el
-              significado
-              y la estructura del contenido.</p>
-            <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-                            </pre>
-            <h3 id="etiqueta">Etiquetas</h3>
-            <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una
-              tiene
-              características y usos diferentes aunque visualmente den un resultado similar.</p>
-            <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
-              section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos
-              una
-              pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
-              Software Developer.</p>
-            <h3 id="dom">DOM</h3>
-            <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
-              genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos
-              identificar
-              dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
-            <img src="./images/dom.png" alt="estructura de árbol que representa al Documento Objetc Model">
-            <h3 id="semantica">Semántica</h3>
-            <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente
-              decorativos
-              y
-              no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán
-              más
-              relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido,
-              categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También
-              ayudará
-              a
-              la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
-            <h3 id="atributos">Atributos</h3>
-            <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por
-              el
-              navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
-              funcionan en solo alguna etiquetas como src</p>
-            <h3 id="css">CSS</h3>
-            <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para
-              describir
-              la presentación de documentos HTML</p>
-            <img src="./images/css3.png" alt="Logo de CSS">
-          </section>
+window.onbeforeunload = function(event) {
 
-            <section class="section-content">
-              <div class="modelo-caja">
-              <h2>Modelo de caja</h2>
-              <h3>El modelo de caja está compuesto por:</h3>
-              <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
-                herramientas
-                de
-                desarrollo avanzadas y de amigable uso.</p>
-              <ol>
-                <li>Tamaño del del contenido / ancho y alto</li>
-                <li>Padding / Relleno</li>
-                <li>Border / Bordes</li>
-                <li>Margin / Márgenes</li>
-              </ol>
-              <h3>Propiedades físicas para el modelo de caja:</h3>
-              <ul>
-                <li>width / height</li>
-                <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-                <li>border / border-top | border-right | border-bottom | border-left</li>
-                <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
-              </ul>
-              <h3>Propiedades lógicas para el modelo de caja:</h3>
-              <ul>
-                <li>inline-size / block-size</li>
-                <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end
-                </li>
-                <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end
-                </li>
-                <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start |
-                  padding-inline-end</li>
-              </ul>
-              <h3>Modelo de caja</h3>
-              <img src="./images/css3.png" alt="Logo de CSS">
-            </div>
-            </section>
-          <a href="http://forocilac.org/portal/" target="_blank">Foro CILAC</a>
-          <p> Envía un correo a <a href="mailto:fa@test.com">fa@test.com</a></p>
+// notify about potential data loss here
 
-          <div class="section-content">
-            <h2>Videos de prueba</h2>
-            <div class="slider">
-              <scroll-container class="slider-container">
-                <scroll-page class="slider-slide" id="video-1">
-                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-                </scroll-page>
-                <scroll-page class="slider-slide" id="video-2">
-                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/tCXGJQYZ9JA" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-                </scroll-page>
-                <scroll-page class="slider-slide" id="video-3">
-                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Dkk9gvTmCXY" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-                </scroll-page>
-              </scroll-container>
-              <div class="slider-bullet-list">
-                <a href="#video-1" class="slider-bullet"></a>
-                <a href="#video-2" class="slider-bullet"></a>
-                <a href="#video-3" class="slider-bullet"></a>
-              </div>
-            </div>
-          </div>
-          <p>
-            Si tienes alguna pregunta escríbeme a
-            <a href="mailto:me@test.com">me@test.com</a>
-          </p>
-          <div class="section-content">
-            <div class="modelo-caja">
-              <h2>Suscríbete a nuestro newsletter</h2>
-              <form action="#" class="form">
-                <!-- <select name="" id="">
-                  <option value="">curso 1</option>
-                  <option value="">curso 2</option>
-                </select>
-                <input type="checkbox">
-                <input type="radio"> -->
-                <input type="text" required placeholder="Nombre">
-                <input type="email" required placeholder="Correo Electrónico">
-                <input type="submit" value="Suscribirme">
-              </form>
-            </div>
-          </div>
+};
+           </pre>
+          <ul>
+            <li>Font size should be minimum 16px. 16px for body text is a good place to start but remember that the bigger the screen
+            size, the larger the text.</li>
+            <li>Aim for line-height to be 1.5em or 1.6em for optimal readability.</li>
+            <li>Always view your designs on an actual device. </li>
+          </ul>
+          <blockquote>
+            <p>And the Back button in a browser is this emergency exit. If you are afraid that users will lose their data by clicking
+            the Back button, it’s better to warn users about that by displaying a message “Your work will be lost"on the Back button
+            click.</p>
+          </blockquote>
 
 
 
-        </div>
-      </div>
-    </main>
-    <footer>
-      <h2>
-        © Test 2021
-      </h2>
-      <img src="./images/social.png" alt="Logo de Instagram">
-      <img src="./images/social2.png" alt="Logo de Facebook">
-      <img src="./images/social3.png" alt="Logo de Twitter">
-    </footer>
-
-    <script>
-      const $detailsList = document.querySelectorAll('details')
-      $detailsList.forEach(($details)=>{
-        $details.querySelector('summary').addEventListener('click', expand)
-      })
-      function expand(){
-        $detailsList.forEach(($details) => {
-          $details.removeAttribute('open')
-        })
-      }
-      </script>
   </body>
   </html>
