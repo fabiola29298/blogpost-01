@@ -228,7 +228,21 @@ blockquote p {
 .form input::-webkit-input-placeholder {
   color: var(--white20)
 }
-
+.button-option {
+  inline-size: 50%;
+  /* border: 1px solid var(--white30); */
+  /* background: #251F24; */
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: var(--white30);
+  font-size: 16px;
+  display: block;
+  margin-block-end: 24px;
+  background: #157EFB;
+  border: none;
+}
 
 @media screen and (min-width: 1366px) {
   .hero {
