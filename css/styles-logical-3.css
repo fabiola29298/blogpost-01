@@ -23,7 +23,7 @@ a {
   border-inline-start: 4px solid #C4C4C4 ;
 }
 header {
-  width: 50px;
+  width: 200px;
   margin-block-start: 20px;
   font-size: 14px;
   color: var(--gray20);

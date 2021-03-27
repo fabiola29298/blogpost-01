@@ -23,7 +23,7 @@ a {
   border-inline-start: 4px solid #C4C4C4 ;
 }
 header {
-  width: 50px;
+  width: 200px;
   margin-block-start: 20px;
   font-size: 14px;
   color: var(--gray20);
@@ -273,7 +273,7 @@ footer img{
 }
 
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1166px) {
   .hero {
     block-size: 350px;
   }
@@ -289,9 +289,12 @@ footer img{
   header {
     position: absolute;
     inset-block-start: 0;
-    inset-inline-start: 1008px;
+    inset-inline-start: 908px;
     inline-size: 30%;
     padding-inline-start: 16px;
+  }
+  .wrapper{
+    max-inline-size: 802px;
   }
   h1 {
     font-size: 60px;

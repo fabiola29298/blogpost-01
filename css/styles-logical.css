@@ -244,7 +244,7 @@ blockquote p {
   border: none;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1166px) {
   .hero {
     block-size: 350px;
   }
@@ -262,6 +262,9 @@ blockquote p {
     inset-block-start: 0;
     inset-inline-start: -208px;
     inline-size: 188px;
+  }
+  .wrapper{
+    max-inline-size: 702px;
   }
   h1 {
     font-size: 60px;
