@@ -49,7 +49,9 @@ hr {
   margin-block: 64px;
   border-color: rgba(97, 97, 97, 0.2);
 }
-
+img{
+  width: 90%;
+}
 pre {
   margin-block: 40px;
   background: #E5E5E5;
